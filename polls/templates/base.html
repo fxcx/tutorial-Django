@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base index</title>
+</head>
+<body>
+        <h1>Encuenta</h1>
+    <header>
+        {% block pregunta %}
+        {% endblock %}
+    </header>
+    <main>
+        {% block contain %}
+
+        {% if detail %}
+        {% block detail %}{% endblock %}
+
+        {% endif %}
+        {% block result %}{% endblock %}
+        
+        {% endblock %}
+    </main>
+    <footer>
+        <h2>footer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae saepe aperiam veniam, iste quos corporis a iure ducimus quas sit, et pariatur officia, quia obcaecati ratione excepturi doloremque doloribus voluptatem!</p>
+    </footer>
+</body>
+</html>
